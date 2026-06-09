@@ -72,9 +72,4 @@ const revNumber = (arr) => {
 }
 console.log(revNumber([10 , 20 , 30]));
 
-//  Remove duplicates
 
-const revDuplicateArr = (arr) =>{
-     
-}
-console.log(revDuplicateArr([10, 10 , 20 , 30 , 30]));
