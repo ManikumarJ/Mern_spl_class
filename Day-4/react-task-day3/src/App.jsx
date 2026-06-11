@@ -3,6 +3,7 @@ import Empsal from './components/Empsal'
 import Userfind from './components/Userfind'
 import ProductCard from './components/ProductCard'
 import Calccartamt from './components/Calccartamt'
+import StudManagementSys from './components/StudManagementSys'
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Userfind/>
       <ProductCard/>
       <Calccartamt/>
+      <StudManagementSys/>
 
     </>
   )
