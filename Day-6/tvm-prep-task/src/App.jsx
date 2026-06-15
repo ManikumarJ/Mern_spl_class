@@ -1,11 +1,11 @@
 import React from 'react'
-import MovieTicketBooking from './components/MovieTicketBooking'
+import Examresultsys from './components/Examresultsys'
 
 const App = () => {
   return (
     <>
-    <MovieTicketBooking/>
-    
+    <Examresultsys/>
+
     </>
   )
 }
