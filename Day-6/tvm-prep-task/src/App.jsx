@@ -1,10 +1,11 @@
 import React from 'react'
-import EmpAttendance from './components/EmpAttendance'
+import MovieTicketBooking from './components/MovieTicketBooking'
 
 const App = () => {
   return (
     <>
-      <EmpAttendance/>
+    <MovieTicketBooking/>
+    
     </>
   )
 }
