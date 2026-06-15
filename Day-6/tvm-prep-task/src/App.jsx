@@ -1,11 +1,10 @@
 import React from 'react'
-import Examresultsys from './components/Examresultsys'
+import ClockTimer from './components/ClockTimer'
 
 const App = () => {
   return (
     <>
-    <Examresultsys/>
-
+<ClockTimer/>
     </>
   )
 }
