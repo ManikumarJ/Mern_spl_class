@@ -1,0 +1,41 @@
+import React, { useState } from "react";
+
+const EmployeeState = () => {
+  const [employees, setEmployees] = useState([
+    { id: 1, name: "Ravi", salary: 25000 },
+    { id: 2, name: "Priya", salary: 30000 },
+    { id: 3, name: "Arun", salary: 35000 },
+  ]);
+
+  const updateSalary = (id) => {
+    const updatedEmployees = employees.map((employee) =>
+      employee.id === id ? { ...employee, salary: 50000 } : employee
+    );
+
+    setEmployees(updatedEmployees);
+  };
+
+  return (
+    <div>
+      <h2>Employee List</h2>
+
+      {employees.map((employee) => (
+        <div key={employee.id}>
+          <p>ID: {employee.id}</p>
+          <p>Name: {employee.name}</p>
+          <p>Salary: ₹{employee.salary}</p>
+
+          {employee.id === 2 && (
+            <button onClick={() => updateSalary(employee.id)}>
+              Update Salary
+            </button>
+          )}
+
+          <hr />
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default EmployeeState;
